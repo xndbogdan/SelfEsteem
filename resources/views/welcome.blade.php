@@ -1,5 +1,10 @@
 @extends('layouts.app')
-
+<style>
+    body
+    {
+        overflow:hidden;
+    }
+</style>
 @section('content')
     <div id="clouds">
         <div class="cloud x1"></div>
@@ -20,11 +25,7 @@
                 </ul>
                 <div class="mouth"></div>
             </div>
-
-
         </div>
-
-
     </div>
     <div class="welcome w-100">
         <div class="d-flex justify-content-center">
@@ -33,5 +34,4 @@
                 </h1>
         </div>
     </div>
-
 @endsection
