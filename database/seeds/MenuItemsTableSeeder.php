@@ -173,5 +173,122 @@ class MenuItemsTableSeeder extends Seeder
                 'order'      => 14,
             ])->save();
         }
+
+        //menu items for logged admin
+        $menu = Menu::where('name', 'admin_login')->firstOrFail();
+
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('Dashboard'),
+            'url'     => '',
+            'route'   => 'home',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-home',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 1,
+            ])->save();
+        }
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('Log Out'),
+            'url'     => '',
+            'route'   => 'logout',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-power',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 2,
+            ])->save();
+        }
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('Admin Panel'),
+            'url'     => '',
+            'route'   => 'voyager.dashboard',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-params',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 3,
+            ])->save();
+        }
+
+        //menu items for logged admin
+        $menu = Menu::where('name', 'user_login')->firstOrFail();
+
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('Dashboard'),
+            'url'     => '',
+            'route'   => 'home',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-home',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 1,
+            ])->save();
+        }
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('Log Out'),
+            'url'     => '',
+            'route'   => 'logout',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-power',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 2,
+            ])->save();
+        }
+
+        //menu items for logged admin
+        $menu = Menu::where('name', 'guest_login')->firstOrFail();
+
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('Log In'),
+            'url'     => '',
+            'route'   => 'login',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-key',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 1,
+            ])->save();
+        }
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
+            'title'   => __('Register'),
+            'url'     => '',
+            'route'   => 'register',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-people',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 2,
+            ])->save();
+        }
     }
 }

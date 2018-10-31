@@ -296,7 +296,8 @@
 @stop
 
 @section(Config::get('chatter.yields.footer'))
-
+<!-- Scripts -->
+<script src="{{ asset('js/app.js') }}"></script>
 @if( $chatter_editor == 'tinymce' || empty($chatter_editor) )
 	<script>var chatter_editor = 'tinymce';</script>
     <script src="{{ url('/vendor/devdojo/chatter/assets/vendor/tinymce/tinymce.min.js') }}"></script>

@@ -10,7 +10,7 @@ window.Popper = require('popper.js').default;
 
 try {
     window.$ = window.jQuery = require('jquery');
-
+    window.$().spectrum = require('spectrum-colorpicker');
     require('bootstrap');
 } catch (e) {}
 
