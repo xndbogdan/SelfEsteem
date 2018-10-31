@@ -1,15 +1,15 @@
 ﻿Bucharest Polytechnic University Faculty of Engineering in Foreign Languages
 
-## <center>Databases Project</center>
+## <center>Databases Project</center><br/>
 
-# <center>HUBS SELF ESTEEM PLATFORM<center>
+# <center>HUBS SELF ESTEEM PLATFORM<center><br/>
 
-Coordinator Asist. Drd. Ing. Iuliana Marin
-Student Moșteanu Bogdan-Mihai
+Coordinator Asist. Drd. Ing. Iuliana Marin<br/>
+Student Moșteanu Bogdan-Mihai<br/>
 
 
 
-**Description**
+**Description**<br/>
 
 The purpose of this project is to help people who have self esteem issues talk to other people who face similar problems in a friendly community.
  
@@ -23,16 +23,16 @@ Used packages:
 Laravel Voyager (Admin panel)
 Chatter (For the forums/discussions)
 
-**Database Design and Implementation**
+**Database Design and Implementation**<br/>
 
 ![enter image description here](https://lh3.googleusercontent.com/aj1nSRgJDZYBh2Q29deTEdXYyu2zi9bfwJxbbuKVzQdPyXDRWnEZI_srG7TP3e5tnyVRzXSKdsGW)
 
 With this platform you can define custom user roles. 
 The default ones are user and admin, but you can easily add roles like "Moderator".
 
-## Usage
+## Usage <br/>
 
-**Requirements**
+**Requirements**<br/>
 You will need to make sure your server meets the following requirements:
 
 -   PHP >= 7.1.3
@@ -44,7 +44,7 @@ You will need to make sure your server meets the following requirements:
 -   Ctype PHP Extension
 -   JSON PHP Extension
 
-**Installation**
+**Installation** <br/>
 
 1. Download the project
 	- git clone https://github.com/xndbogdan/SelfEsteem
