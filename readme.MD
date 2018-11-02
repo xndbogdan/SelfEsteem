@@ -20,12 +20,11 @@ The purpose of this project is to help people who have self esteem issues talk t
  To create such a project I am using mysql as the database, with a  PHP backend and bootstrap as the frontend framework.
 
 Used packages:
-Laravel Voyager (Admin panel)
-Chatter (For the forums/discussions)
+- [Laravel Voyager (Admin panel)](https://laravelvoyager.com)
+- [Chatter (For the forums/discussions)](https://github.com/thedevdojo/chatter)
 
 **Database Design and Implementation**<br/>
-
-![enter image description here](https://lh3.googleusercontent.com/aj1nSRgJDZYBh2Q29deTEdXYyu2zi9bfwJxbbuKVzQdPyXDRWnEZI_srG7TP3e5tnyVRzXSKdsGW)
+![enter image description here](https://lh3.googleusercontent.com/ex915P4_liKIjwEhtkpyEnFFSU8yjnHw63CsYWiArZleOoDF1D3UKkGj_eMGAH8mHjjPekpWrxro "ERD")
 
 With this platform you can define custom user roles. 
 The default ones are user and admin, but you can easily add roles like "Moderator".
