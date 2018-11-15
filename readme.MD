@@ -26,6 +26,12 @@ Used packages:
 **Database Design and Implementation**<br/>
 ![enter image description here](https://lh3.googleusercontent.com/ex915P4_liKIjwEhtkpyEnFFSU8yjnHw63CsYWiArZleOoDF1D3UKkGj_eMGAH8mHjjPekpWrxro "ERD")
 
+**CONSTRAINTS** <br/>
+
+- For users, the email must be unique
+- The slugs for discussions must be unique
+- Obviously, the ids for each table must be unique
+
 With this platform you can define custom user roles. 
 The default ones are user and admin, but you can easily add roles like "Moderator".
 
@@ -56,4 +62,9 @@ You will need to make sure your server meets the following requirements:
 	- php artisan serve
 	- npm run watch
 
+
+**Future plans** <br/>
+
+- Fully implement questionnaires for users
+- Better, more responsive user interface
 > Written with [StackEdit](https://stackedit.io/).
