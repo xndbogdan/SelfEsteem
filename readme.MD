@@ -7,7 +7,10 @@
 Coordinator Asist. Drd. Ing. Iuliana Marin<br/>
 Student Moșteanu Bogdan-Mihai<br/>
 
+**WARNING**<br/>
 
+For evaluation purposes there is a folder 'UNIVERSITY' with all the sql commands to create the database.<br/>
+For all other purposes you have the built-in laravel migration!<br/>
 
 **Description**<br/>
 
