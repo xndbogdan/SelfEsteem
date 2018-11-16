@@ -25,7 +25,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/logout','Auth\LoginController@logout');
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/questionnaires','HomeController@questionnaires')->name('questionnaires');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();

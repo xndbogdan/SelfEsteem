@@ -192,6 +192,7 @@ class MenuItemsTableSeeder extends Seeder
                 'order'      => 1,
             ])->save();
         }
+
         $menuItem = MenuItem::firstOrNew([
             'menu_id' => $menu->id,
             'title'   => __('Log Out'),
@@ -209,6 +210,21 @@ class MenuItemsTableSeeder extends Seeder
         }
         $menuItem = MenuItem::firstOrNew([
             'menu_id' => $menu->id,
+            'title'   => __('Questionnaires'),
+            'url'     => '',
+            'route'   => 'questionnaires',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-person',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 3,
+            ])->save();
+        }
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
             'title'   => __('Admin Panel'),
             'url'     => '',
             'route'   => 'voyager.dashboard',
@@ -219,11 +235,11 @@ class MenuItemsTableSeeder extends Seeder
                 'icon_class' => 'voyager-params',
                 'color'      => null,
                 'parent_id'  => null,
-                'order'      => 3,
+                'order'      => 4,
             ])->save();
         }
 
-        //menu items for logged admin
+        //menu items for logged user
         $menu = Menu::where('name', 'user_login')->firstOrFail();
 
         $menuItem = MenuItem::firstOrNew([
@@ -243,6 +259,21 @@ class MenuItemsTableSeeder extends Seeder
         }
         $menuItem = MenuItem::firstOrNew([
             'menu_id' => $menu->id,
+            'title'   => __('Questionnaires'),
+            'url'     => '',
+            'route'   => 'questionnaires',
+        ]);
+        if (!$menuItem->exists) {
+            $menuItem->fill([
+                'target'     => '_self',
+                'icon_class' => 'voyager-person',
+                'color'      => null,
+                'parent_id'  => null,
+                'order'      => 2,
+            ])->save();
+        }
+        $menuItem = MenuItem::firstOrNew([
+            'menu_id' => $menu->id,
             'title'   => __('Log Out'),
             'url'     => '',
             'route'   => 'logout',
@@ -253,11 +284,11 @@ class MenuItemsTableSeeder extends Seeder
                 'icon_class' => 'voyager-power',
                 'color'      => null,
                 'parent_id'  => null,
-                'order'      => 2,
+                'order'      => 3,
             ])->save();
         }
 
-        //menu items for logged admin
+        //menu items for unlogged guest
         $menu = Menu::where('name', 'guest_login')->firstOrFail();
 
         $menuItem = MenuItem::firstOrNew([

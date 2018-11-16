@@ -12,7 +12,7 @@ class Question extends Model
      * @var string
      */
     protected $table = 'questions';
-
+    public $timestamps=false;
     /**
      * The attributes that are mass assignable.
      *
@@ -20,6 +20,7 @@ class Question extends Model
      */
     protected $fillable = [
         'text',
-        'questionnaire_id'
+        'questionnaire_id',
+        'category_id'
     ];
 }

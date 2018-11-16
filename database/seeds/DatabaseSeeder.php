@@ -13,6 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(ChatterTableSeeder::class);
         $this->call(VoyagerDatabaseSeeder::class);
+        $this->call(QuestionnaireDatabaseSeeder::class);
 
     }
 }

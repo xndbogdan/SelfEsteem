@@ -12,7 +12,7 @@ class Questionnaire extends Model
      * @var string
      */
     protected $table = 'questionnaires';
-
+    public $timestamps=false;
     /**
      * The attributes that are mass assignable.
      *
