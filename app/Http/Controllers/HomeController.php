@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Questionnaire;
+use App\Questionnaire_Result;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -29,6 +31,8 @@ class HomeController extends Controller
 
     public function questionnaires()
     {
-        die("not implemented yet!");
+        $questionnaires = Questionnaire::all();
+        //$questionnaires_results = Questionnaire_Result::where() //TODO: ADD USER_ID to questionnaire result!!!!!
+        return view('questionnaires',['questionnaires'=>$questionnaires]);
     }
 }
